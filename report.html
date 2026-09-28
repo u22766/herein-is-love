@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The report · Herein Is Love</title>
+<meta name="description" content="What the Bible is about, read whole and in order: the union God planned before creation, the promise that rescues it, and the love behind both.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand"><a href="./">Herein Is Love</a><small>From Everlasting</small></div>
+  <nav class="nav" aria-label="Site"><a href="./">Read</a><a href="reflections.html">Reflections</a><a href="report.html" aria-current="page">The report</a></nav>
+</header>
+<main><article class="report" id="report"><p class="loading">Loading the report…</p></article></main>
+<footer class="site-foot">Text of the King James Version is public domain. Notes, threads, reflections and the report are © 2026 Herein Is Love contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
+<script src="vendor/marked.umd.js"></script>
+<script>
+(async function () {
+  const el = document.getElementById('report');
+  try {
+    const r = await fetch('content/report.md');
+    if (!r.ok) throw new Error(r.status);
+    const src = await r.text();
+    el.innerHTML = marked.parse(src);
+    // byline under the title
+    const h1 = el.querySelector('h1'), by = h1 && h1.nextElementSibling;
+    if (by && by.tagName === 'P' && by.textContent.length < 40) by.className = 'byline';
+    // heading anchors and a contents list
+    const slug = t => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    const h2s = [...el.querySelectorAll('h2')];
+    h2s.forEach(h => h.id = slug(h.textContent));
+    el.querySelectorAll('h3').forEach(h => h.id = slug(h.textContent));
+    const list = document.createElement('ul'); list.className = 'toc-list';
+    list.innerHTML = h2s.map(h => `<li><a href="#${h.id}">${h.textContent.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}</a></li>`).join('');
+    (by && by.className === 'byline' ? by : h1).after(list);
+    el.querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'table-wrap'; t.replaceWith(w); w.appendChild(t); });
+    if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
+  } catch (e) {
+    el.innerHTML = '<p class="loading">The report could not be loaded. Serve this folder (for example with GitHub Pages) rather than opening the file directly.</p>';
+  }
+})();
+</script>
+</body>
+</html>

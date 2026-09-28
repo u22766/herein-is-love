@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Reflections · Herein Is Love</title>
+<meta name="description" content="Short readings on the story the Bible tells, read in order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand"><a href="./">Herein Is Love</a><small>From Everlasting</small></div>
+  <nav class="nav" aria-label="Site"><a href="./">Read</a><a href="reflections.html" aria-current="page">Reflections</a><a href="report.html">The report</a></nav>
+</header>
+<main><article class="report" id="out"><p class="loading">Loading…</p></article></main>
+<footer class="site-foot">Text of the King James Version is public domain. Notes, threads, reflections and the report are © 2026 Herein Is Love contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
+<script src="vendor/js-yaml.min.js"></script>
+<script src="vendor/marked.umd.js"></script>
+<script>
+(async function () {
+  const out = document.getElementById('out');
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const get = u => fetch(u).then(r => { if (!r.ok) throw new Error(u); return r.text(); });
+  const split = src => {
+    const m = src.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+    return m ? { meta: jsyaml.load(m[1]) || {}, body: m[2] } : { meta: {}, body: src };
+  };
+  const fmtDate = d => {
+    const iso = d instanceof Date ? d.toISOString().slice(0, 10) : String(d).slice(0, 10);
+    const dt = new Date(iso + 'T12:00:00');
+    return isNaN(dt) ? '' : dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
+  // "section 18" or "sections 18" in a reflection becomes a link into the reader
+  const linkSections = html => html.replace(/\b(sections?) (\d+[a-z]?)\b/gi, (m, w, n) => `<a href="./#s${n}">${w} ${n}</a>`);
+
+  try {
+    const [files, timeline, threads] = await Promise.all([
+      get('content/reflections/index.yaml').then(t => jsyaml.load(t) || []),
+      get('content/timeline.yaml').then(t => jsyaml.load(t)),
+      get('content/threads.yaml').then(t => jsyaml.load(t)),
+    ]);
+    const secTitle = {};
+    timeline.forEach(p => p.sections.forEach(s => { secTitle[String(s.id)] = s.title; }));
+    const reflections = await Promise.all(files.map(f => get('content/reflections/' + f).then(t => ({ slug: f.replace(/\.md$/, ''), ...split(t) }))));
+
+    const showList = () => {
+      document.title = 'Reflections · Herein Is Love';
+      out.innerHTML = `<h1>Reflections</h1><p class="byline">Short readings on the story the Bible tells.</p>` +
+        reflections.map(l => `<div class="thread"><h2 style="border:0;margin:0 0 4px;padding:0"><a href="#${esc(l.slug)}" style="color:inherit;text-decoration:none">${esc(l.meta.title || l.slug)}</a></h2>` +
+          `<p class="byline" style="margin:0 0 8px">${esc(fmtDate(l.meta.date))}</p><p>${esc(l.meta.summary || '')}</p><p><a href="#${esc(l.slug)}">Read the reflection</a></p></div>`).join('');
+      window.scrollTo(0, 0);
+    };
+    const showReflection = l => {
+      document.title = (l.meta.title || l.slug) + ' · Herein Is Love';
+      let html = `<p class="eyebrow"><a href="reflections.html">Reflections</a></p><h1>${esc(l.meta.title || l.slug)}</h1><p class="byline">${esc(fmtDate(l.meta.date))}</p>`;
+      html += linkSections(marked.parse(l.body));
+      const secs = (l.meta.sections || []).map(String).filter(s => secTitle[s]);
+      if (secs.length || l.meta.thread) {
+        html += `<h3>Read it in order</h3><div class="go">` +
+          secs.map(s => `<a class="chip" href="./#s${esc(s)}"><b>${esc(s)}</b>${esc(secTitle[s])}</a>`).join('') + `</div>`;
+        const th = threads.find(t => t.id === l.meta.thread);
+        if (th) html += `<p style="margin-top:14px">Or follow the thread <a href="./#threads"><em>${esc(th.name)}</em></a>.</p>`;
+      }
+      out.innerHTML = html; window.scrollTo(0, 0);
+    };
+    const route = () => {
+      const slug = decodeURIComponent(location.hash.slice(1));
+      const l = reflections.find(x => x.slug === slug);
+      l ? showReflection(l) : showList();
+    };
+    window.addEventListener('hashchange', route);
+    route();
+  } catch (e) {
+    out.innerHTML = '<p class="loading">The reflections could not be loaded. Serve this folder (for example with GitHub Pages) rather than opening the file directly.</p>';
+  }
+})();
+</script>
+</body>
+</html>
