@@ -1,0 +1,2423 @@
+# Herein Is Love: reading order
+# Each section lists what to read as references ("Genesis 22", "Mark 8:31-9:1",
+# "Ephesians 1:4-5, 9-11"). The verse text comes from data/kjv.json.
+# id: the section number shown to readers (a string such as 1a is fine).
+# gathered: true means the verses are also read in their own place; search skips them.
+- part: 1
+  title: Before the Beginning and the Early World
+  sections:
+  - id: 1
+    title: The Word before all things
+    date: Before time
+    read:
+    - John 1:1-5
+  - id: 1a
+    title: Before the foundation of the world
+    date: Before time
+    gathered: true
+    note: Gathered verses. Each passage below describes something the Bible places before creation, so
+      it is read here, between John 1:1 and Genesis 1:1. Every verse is also read in its own place in
+      the timeline, and search takes you there.
+    read:
+    - John 17:5, 24
+    - Micah 5:2
+    - Colossians 1:15-17
+    - Proverbs 8:22-31
+    - Ephesians 1:4-5, 9-11
+    - Acts 2:23
+    - Titus 1:2
+    - 2 Timothy 1:9
+    - 1 Peter 1:18-20
+    - Revelation 13:8
+    - Revelation 17:8
+    - Matthew 25:34
+    - Ephesians 3:9-11
+    - Revelation 4:11
+    - Romans 8:20-21
+    - Acts 4:27-28
+    - Job 38:4-7
+  - id: 2
+    title: Creation
+    date: The beginning
+    read:
+    - Genesis 1-2
+  - id: 3
+    title: The fall and the first promise
+    read:
+    - Genesis 3
+  - id: 4
+    title: Cain and Abel
+    read:
+    - Genesis 4
+  - id: 5
+    title: Adam to Noah
+    date: Years of the world 0–1056
+    read:
+    - Genesis 5
+    - 1 Chronicles 1:1-4
+  - id: 6
+    title: The flood
+    date: Year of the world 1656
+    read:
+    - Genesis 6-9
+  - id: 7
+    title: The nations
+    read:
+    - Genesis 10
+    - 1 Chronicles 1:5-23
+  - id: 8
+    title: Babel
+    read:
+    - Genesis 11:1-9
+  - id: 9
+    title: Shem to Abram
+    read:
+    - Genesis 11:10-32
+    - 1 Chronicles 1:24-27
+  - id: 10
+    title: Job
+    date: Age of the patriarchs (placement debated)
+    read:
+    - Job 1-42
+- part: 2
+  title: The Patriarchs
+  sections:
+  - id: 11
+    title: Abram's call
+    date: About 2091 BC
+    read:
+    - Genesis 12
+  - id: 12
+    title: Lot, the war of the kings, and Melchizedek
+    read:
+    - Genesis 13-14
+  - id: 13
+    title: The covenant between the pieces
+    read:
+    - Genesis 15
+  - id: 14
+    title: Hagar and Ishmael
+    date: About 2080 BC
+    read:
+    - Genesis 16
+  - id: 15
+    title: Circumcision and new names
+    date: About 2067 BC
+    read:
+    - Genesis 17
+  - id: 16
+    title: Sodom and Gomorrah
+    read:
+    - Genesis 18-19
+  - id: 17
+    title: Gerar, and the birth of Isaac
+    date: About 2066 BC
+    read:
+    - Genesis 20-21
+  - id: 18
+    title: The binding of Isaac
+    read:
+    - Genesis 22
+  - id: 19
+    title: Sarah's death and Isaac's marriage
+    read:
+    - Genesis 23-24
+  - id: 20
+    title: Abraham's death; Jacob and Esau born
+    date: About 2006–1991 BC
+    read:
+    - Genesis 25
+    - 1 Chronicles 1:28-34
+  - id: 21
+    title: Isaac and the wells
+    read:
+    - Genesis 26
+  - id: 22
+    title: The stolen blessing
+    read:
+    - Genesis 27
+  - id: 23
+    title: Jacob's ladder at Bethel
+    read:
+    - Genesis 28
+  - id: 24
+    title: Jacob with Laban
+    date: 20 years
+    read:
+    - Genesis 29-31
+  - id: 25
+    title: Jacob wrestles God and meets Esau
+    read:
+    - Genesis 32-33
+  - id: 26
+    title: Dinah at Shechem
+    read:
+    - Genesis 34
+  - id: 27
+    title: Back to Bethel; Jacob's twelve sons
+    read:
+    - Genesis 35
+    - 1 Chronicles 2:1-2
+  - id: 28
+    title: Esau's descendants, Edom
+    read:
+    - Genesis 36
+    - 1 Chronicles 1:35-54
+  - id: 29
+    title: Joseph sold
+    date: About 1898 BC
+    read:
+    - Genesis 37
+  - id: 30
+    title: Judah and Tamar
+    read:
+    - Genesis 38
+  - id: 31
+    title: Joseph in prison, then over Egypt
+    date: About 1885 BC
+    read:
+    - Genesis 39-41
+  - id: 32
+    title: The brothers come for grain
+    read:
+    - Genesis 42-45
+  - id: 33
+    title: Jacob's family moves to Egypt
+    date: About 1876 BC
+    read:
+    - Genesis 46-47
+  - id: 34
+    title: Jacob blesses his sons
+    read:
+    - Genesis 48-49
+  - id: 35
+    title: The deaths of Jacob and Joseph
+    read:
+    - Genesis 50
+- part: 3
+  title: Exodus and Wilderness
+  sections:
+  - id: 36
+    title: Slavery in Egypt
+    read:
+    - Exodus 1
+  - id: 37
+    title: Moses's birth, flight, and years in Midian
+    date: About 1526–1446 BC
+    read:
+    - Exodus 2
+  - id: 38
+    title: The burning bush
+    read:
+    - Exodus 3-4
+  - id: 39
+    title: Before Pharaoh
+    read:
+    - Exodus 5-6
+  - id: 40
+    title: The plagues
+    read:
+    - Exodus 7-11
+  - id: 41
+    title: The Passover
+    date: 1446 BC, first month, 14th day
+    read:
+    - Exodus 12-13
+  - id: 42
+    title: Through the Red Sea
+    read:
+    - Exodus 14-15
+  - id: 43
+    title: Manna, water from the rock, and Amalek
+    date: Second month
+    read:
+    - Exodus 16-17
+  - id: 44
+    title: Jethro's advice
+    read:
+    - Exodus 18
+  - id: 45
+    title: The covenant and the Law at Sinai
+    date: Third month
+    read:
+    - Exodus 19-24
+  - id: 46
+    title: Instructions for the tabernacle and priesthood
+    read:
+    - Exodus 25-31
+  - id: 47
+    title: The golden calf and the covenant renewed
+    read:
+    - Exodus 32-34
+  - id: 48
+    title: The tabernacle built and set up
+    date: 1445 BC, second year, first month, 1st day
+    read:
+    - Exodus 35-40
+  - id: 49
+    title: The offerings
+    date: First month
+    read:
+    - Leviticus 1-7
+  - id: 50
+    title: The priests ordained; Nadab and Abihu
+    date: First month, 1st–8th days
+    read:
+    - Leviticus 8-10
+  - id: 51
+    title: The leaders' offerings at the dedication
+    date: First month, 12 days
+    read:
+    - Numbers 7
+  - id: 52
+    title: The Levites set apart
+    read:
+    - Numbers 8
+  - id: 53
+    title: The second Passover
+    date: First month, 14th day
+    note: Numbers 7–9 are dated before the census of Numbers 1, so they are read here.
+    read:
+    - Numbers 9:1-14
+  - id: 54
+    title: Clean and unclean
+    read:
+    - Leviticus 11-15
+  - id: 55
+    title: The Day of Atonement
+    read:
+    - Leviticus 16
+  - id: 56
+    title: The holiness laws
+    read:
+    - Leviticus 17-22
+  - id: 57
+    title: The feasts
+    read:
+    - Leviticus 23
+  - id: 58
+    title: Sabbath years, Jubilee, and vows
+    read:
+    - Leviticus 24-27
+  - id: 59
+    title: The census and the camp
+    date: Second month, 1st day
+    read:
+    - Numbers 1-4
+  - id: 60
+    title: Laws, the Nazirite vow, and the priestly blessing
+    read:
+    - Numbers 5-6
+  - id: 61
+    title: The cloud over the tabernacle; leaving Sinai
+    date: Second month, 20th day
+    read:
+    - Numbers 9:15-23
+    - Numbers 10
+  - id: 62
+    title: Complaints, quail, and Miriam
+    read:
+    - Numbers 11-12
+  - id: 63
+    title: The twelve spies and the forty years
+    read:
+    - Numbers 13-14
+  - id: 64
+    title: More laws
+    read:
+    - Numbers 15
+  - id: 65
+    title: Korah's rebellion; Aaron's rod
+    read:
+    - Numbers 16-17
+  - id: 66
+    title: Priests' duties and the red heifer
+    read:
+    - Numbers 18-19
+  - id: 67
+    title: Meribah, and Aaron's death
+    date: 1407 BC, fortieth year
+    read:
+    - Numbers 20
+  - id: 68
+    title: The bronze serpent
+    read:
+    - Numbers 21
+  - id: 69
+    title: Balaam
+    read:
+    - Numbers 22-24
+  - id: 70
+    title: Baal of Peor
+    read:
+    - Numbers 25
+  - id: 71
+    title: The second census, and Joshua commissioned
+    read:
+    - Numbers 26-27
+  - id: 72
+    title: Offerings and vows
+    read:
+    - Numbers 28-30
+  - id: 73
+    title: War with Midian; tribes east of the Jordan
+    read:
+    - Numbers 31-32
+  - id: 74
+    title: The journey list, borders, and cities of refuge
+    read:
+    - Numbers 33-36
+  - id: 75
+    title: Moses's prayer
+    read:
+    - Psalm 90
+  - id: 76
+    title: Moses retells the journey
+    date: 1406 BC, fortieth year, eleventh month
+    read:
+    - Deuteronomy 1-4
+  - id: 77
+    title: The Law given again
+    read:
+    - Deuteronomy 5-26
+  - id: 78
+    title: Blessings and curses
+    read:
+    - Deuteronomy 27-28
+  - id: 79
+    title: The covenant renewed
+    read:
+    - Deuteronomy 29-30
+  - id: 80
+    title: Moses's song and final blessing
+    read:
+    - Deuteronomy 31-33
+  - id: 81
+    title: The death of Moses
+    read:
+    - Deuteronomy 34
+- part: 4
+  title: The Land and the Judges
+  sections:
+  - id: 82
+    title: Rahab and the spies
+    date: 1406 BC
+    read:
+    - Joshua 1-2
+  - id: 83
+    title: Crossing the Jordan
+    date: First month, 10th day
+    read:
+    - Joshua 3-4
+  - id: 84
+    title: Circumcision, Passover, and the commander of the Lord's army
+    read:
+    - Joshua 5
+  - id: 85
+    title: Jericho
+    read:
+    - Joshua 6
+  - id: 86
+    title: Achan's sin; Ai; the covenant read at Mount Ebal
+    read:
+    - Joshua 7-8
+  - id: 87
+    title: The Gibeonites
+    read:
+    - Joshua 9
+  - id: 88
+    title: The southern and northern campaigns
+    date: About 1406–1400 BC
+    read:
+    - Joshua 10-12
+  - id: 89
+    title: The land divided among the tribes
+    note: The tribal records of 1 Chronicles 4–7 are read with the land they describe; some entries run
+      on to later reigns.
+    read:
+    - Joshua 13-21
+    - 1 Chronicles 4-7
+  - id: 90
+    title: The altar by the Jordan
+    read:
+    - Joshua 22
+  - id: 91
+    title: Joshua's farewell and the covenant at Shechem
+    read:
+    - Joshua 23-24
+  - id: 92
+    title: The unfinished conquest
+    read:
+    - Judges 1-2
+  - id: 93
+    title: 'Two early stories: Micah''s idol and the Levite''s concubine'
+    read:
+    - Judges 17-21
+  - id: 94
+    title: Othniel, Ehud, and Shamgar
+    read:
+    - Judges 3
+  - id: 95
+    title: Deborah and Barak
+    read:
+    - Judges 4-5
+  - id: 96
+    title: Gideon
+    read:
+    - Judges 6-8
+  - id: 97
+    title: Abimelech
+    read:
+    - Judges 9
+  - id: 98
+    title: Tola, Jair, Jephthah, and the minor judges
+    read:
+    - Judges 10-12
+  - id: 99
+    title: Samson
+    read:
+    - Judges 13-16
+  - id: 100
+    title: Ruth, and the line of Judah to David
+    date: In the days of the judges
+    read:
+    - Ruth 1-4
+    - 1 Chronicles 2:3-55
+  - id: 101
+    title: Samuel's birth and Hannah's song
+    read:
+    - 1 Samuel 1-2
+  - id: 102
+    title: God calls Samuel
+    read:
+    - 1 Samuel 3
+  - id: 103
+    title: The ark captured and returned
+    date: About 1100 BC
+    read:
+    - 1 Samuel 4-7
+- part: 5
+  title: The United Kingdom
+  sections:
+  - id: 104
+    title: Israel demands a king
+    read:
+    - 1 Samuel 8
+  - id: 105
+    title: Saul anointed; the family of Benjamin
+    date: About 1050 BC
+    read:
+    - 1 Samuel 9-10
+    - 1 Chronicles 8
+  - id: 106
+    title: Saul's first victory; Samuel's farewell
+    read:
+    - 1 Samuel 11-12
+  - id: 107
+    title: Saul's impatience; Jonathan's victory
+    read:
+    - 1 Samuel 13-14
+  - id: 108
+    title: Saul rejected
+    read:
+    - 1 Samuel 15
+  - id: 109
+    title: David anointed; David and Goliath
+    read:
+    - 1 Samuel 16-17
+  - id: 110
+    title: David at Saul's court; Jonathan's friendship
+    read:
+    - 1 Samuel 18-20
+    - Psalm 59
+  - id: 111
+    title: David on the run
+    read:
+    - 1 Samuel 21-22
+    - Psalm 34
+    - Psalm 56
+    - Psalm 52
+    - Psalm 57
+    - Psalm 142
+  - id: 112
+    title: Keilah and the Ziphites
+    read:
+    - 1 Samuel 23
+    - Psalm 54
+    - Psalm 63
+  - id: 113
+    title: David spares Saul; Nabal and Abigail
+    read:
+    - 1 Samuel 24-26
+  - id: 114
+    title: David among the Philistines; Saul and the medium at Endor
+    read:
+    - 1 Samuel 27-30
+    - 1 Chronicles 12:1-22
+  - id: 115
+    title: Saul's death
+    date: 1010 BC
+    read:
+    - 1 Samuel 31
+    - 1 Chronicles 9:35-44
+    - 1 Chronicles 10
+  - id: 116
+    title: David's lament; king over Judah at Hebron
+    date: 1010–1003 BC
+    read:
+    - 2 Samuel 1-4
+    - 1 Chronicles 3:1-4
+  - id: 117
+    title: King over all Israel
+    date: 1003 BC
+    read:
+    - 2 Samuel 5:1-5
+    - 1 Chronicles 11:1-3
+    - 1 Chronicles 12:23-40
+  - id: 118
+    title: Jerusalem taken
+    read:
+    - 2 Samuel 5:6-10
+    - 1 Chronicles 11:4-9
+  - id: 119
+    title: David's house and sons in Jerusalem
+    read:
+    - 2 Samuel 5:11-16
+    - 1 Chronicles 14:1-7
+    - 1 Chronicles 3:5-9
+    - Psalm 30
+  - id: 120
+    title: Victories over the Philistines
+    read:
+    - 2 Samuel 5:17-25
+    - 1 Chronicles 14:8-17
+  - id: 121
+    title: The first attempt to move the ark
+    read:
+    - 2 Samuel 6:1-11
+    - 1 Chronicles 13
+  - id: 122
+    title: The ark brought to Jerusalem
+    read:
+    - 2 Samuel 6:12-23
+    - 1 Chronicles 15-16
+    - Psalm 105
+    - Psalm 96
+    - Psalm 106
+    - Psalm 24
+    - Psalm 68
+  - id: 123
+    title: God's covenant with David
+    read:
+    - 2 Samuel 7
+    - 1 Chronicles 17
+  - id: 124
+    title: David's wars
+    read:
+    - 2 Samuel 8
+    - 1 Chronicles 18
+    - Psalm 60
+  - id: 125
+    title: Kindness to Mephibosheth
+    read:
+    - 2 Samuel 9
+  - id: 126
+    title: War with Ammon
+    read:
+    - 2 Samuel 10
+    - 1 Chronicles 19
+  - id: 127
+    title: David and Bathsheba
+    read:
+    - 2 Samuel 11:1-12:25
+    - Psalm 51
+    - Psalm 32
+  - id: 128
+    title: Rabbah taken
+    read:
+    - 2 Samuel 12:26-31
+    - 1 Chronicles 20:1-3
+  - id: 129
+    title: Amnon, Absalom, and David's flight
+    read:
+    - 2 Samuel 13-18
+    - Psalm 3
+    - Psalm 41
+    - Psalm 55
+  - id: 130
+    title: David's return; Sheba's revolt
+    read:
+    - 2 Samuel 19-20
+    - Psalm 7
+  - id: 131
+    title: The Gibeonites avenged
+    read:
+    - 2 Samuel 21:1-14
+  - id: 132
+    title: The giants
+    read:
+    - 2 Samuel 21:15-22
+    - 1 Chronicles 20:4-8
+  - id: 133
+    title: David's song of deliverance
+    read:
+    - 2 Samuel 22
+    - Psalm 18
+  - id: 134
+    title: David's last words
+    read:
+    - 2 Samuel 23:1-7
+  - id: 135
+    title: David's mighty men
+    read:
+    - 2 Samuel 23:8-39
+    - 1 Chronicles 11:10-47
+  - id: 136
+    title: The census and the threshing floor that becomes the temple site
+    read:
+    - 2 Samuel 24
+    - 1 Chronicles 21
+  - id: 137
+    title: The psalms of David's reign
+    note: These psalms carry no event in their titles, so they are read together within David's reign.
+    read:
+    - Psalm 1-2
+    - Psalm 4-6
+    - Psalm 8-17
+    - Psalm 19-23
+    - Psalm 25-29
+    - Psalm 31
+    - Psalm 33
+    - Psalm 35-40
+    - Psalm 53
+    - Psalm 58
+    - Psalm 61-62
+    - Psalm 64-65
+    - Psalm 69-71
+    - Psalm 86
+    - Psalm 95
+    - Psalm 101
+    - Psalm 103
+    - Psalm 108-110
+    - Psalm 119
+    - Psalm 124
+    - Psalm 131
+    - Psalm 133
+    - Psalm 138-141
+    - Psalm 143-145
+  - id: 138
+    title: David prepares for the temple
+    read:
+    - 1 Chronicles 22
+  - id: 139
+    title: David organizes the Levites, priests, singers, and army
+    read:
+    - 1 Chronicles 23-27
+  - id: 140
+    title: Adonijah's bid; Solomon anointed
+    date: 971 BC
+    read:
+    - 1 Kings 1
+  - id: 141
+    title: David's last assembly
+    read:
+    - 1 Chronicles 28:1-29:22
+  - id: 142
+    title: David's death
+    date: 970 BC
+    read:
+    - 1 Kings 2:1-11
+    - 1 Chronicles 29:23-30
+  - id: 143
+    title: Solomon secures the throne
+    read:
+    - 1 Kings 2:12-46
+    - Psalm 72
+  - id: 144
+    title: Solomon asks for wisdom
+    read:
+    - 1 Kings 3:1-15
+    - 2 Chronicles 1:1-13
+  - id: 145
+    title: The two mothers
+    read:
+    - 1 Kings 3:16-28
+  - id: 146
+    title: Solomon's officials and wisdom
+    read:
+    - 1 Kings 4
+  - id: 147
+    title: Proverbs and the Song of Songs
+    read:
+    - Song of Songs 1-8
+    - Proverbs 1-24
+    - Proverbs 30-31
+  - id: 148
+    title: Preparing to build
+    read:
+    - 1 Kings 5
+    - 2 Chronicles 2
+  - id: 149
+    title: The temple built
+    date: 966–959 BC
+    read:
+    - 1 Kings 6
+    - 2 Chronicles 3:1-14
+    - Psalm 127
+  - id: 150
+    title: Solomon's palace
+    read:
+    - 1 Kings 7:1-12
+  - id: 151
+    title: The temple's furnishings
+    read:
+    - 1 Kings 7:13-51
+    - 2 Chronicles 3:15-5:1
+  - id: 152
+    title: The temple dedicated
+    date: 959 BC
+    read:
+    - 1 Kings 8
+    - 2 Chronicles 5:2-7:10
+    - Psalm 132
+  - id: 153
+    title: God appears to Solomon again
+    read:
+    - 1 Kings 9:1-9
+    - 2 Chronicles 7:11-22
+  - id: 154
+    title: Solomon's building and trade
+    read:
+    - 1 Kings 9:10-28
+    - 2 Chronicles 8
+  - id: 155
+    title: The Queen of Sheba
+    read:
+    - 1 Kings 10:1-13
+    - 2 Chronicles 9:1-12
+  - id: 156
+    title: Solomon's wealth
+    read:
+    - 1 Kings 10:14-29
+    - 2 Chronicles 9:13-28
+    - 2 Chronicles 1:14-17
+  - id: 157
+    title: The temple songs
+    note: The temple's worship songs, written over the life of the temple, are read together here.
+    read:
+    - Psalm 45
+    - Psalm 42-44
+    - Psalm 47
+    - Psalm 49
+    - Psalm 84
+    - Psalm 87-88
+    - Psalm 50
+    - Psalm 73
+    - Psalm 75
+    - Psalm 77-78
+    - Psalm 81-82
+    - Psalm 66-67
+    - Psalm 91-94
+    - Psalm 97-100
+    - Psalm 104
+    - Psalm 111-118
+    - Psalm 120-123
+    - Psalm 125
+    - Psalm 128-130
+    - Psalm 134-136
+  - id: 158
+    title: Solomon turns away
+    read:
+    - 1 Kings 11:1-40
+    - Ecclesiastes 1-12
+  - id: 159
+    title: Solomon's death
+    date: 931 BC
+    read:
+    - 1 Kings 11:41-43
+    - 2 Chronicles 9:29-31
+- part: 6
+  title: The Divided Kingdom
+  sections:
+  - id: 160
+    title: The kingdom splits
+    date: 931 BC
+    read:
+    - 1 Kings 12:1-24
+    - 2 Chronicles 10:1-11:4
+  - id: 161
+    title: Jeroboam's golden calves; the prophet from Judah
+    read:
+    - 1 Kings 12:25-14:20
+  - id: 162
+    title: Rehoboam of Judah; Shishak's invasion
+    date: 926 BC
+    read:
+    - 1 Kings 14:21-31
+    - 2 Chronicles 11:5-12:16
+  - id: 163
+    title: Abijah of Judah
+    date: 913–911 BC
+    read:
+    - 1 Kings 15:1-8
+    - 2 Chronicles 13
+  - id: 164
+    title: Asa of Judah
+    date: 911–870 BC
+    read:
+    - 1 Kings 15:9-24
+    - 2 Chronicles 14-16
+  - id: 165
+    title: Nadab and Baasha of Israel
+    read:
+    - 1 Kings 15:25-16:7
+  - id: 166
+    title: Elah, Zimri, Omri, and Ahab
+    read:
+    - 1 Kings 16:8-34
+  - id: 167
+    title: Jehoshaphat of Judah begins
+    date: 873 BC
+    read:
+    - 2 Chronicles 17
+  - id: 168
+    title: Elijah
+    read:
+    - 1 Kings 17-19
+  - id: 169
+    title: Ahab's wars
+    read:
+    - 1 Kings 20
+  - id: 170
+    title: Naboth's vineyard
+    read:
+    - 1 Kings 21
+  - id: 171
+    title: Ahab and Jehoshaphat at Ramoth-gilead; Ahab's death
+    date: 853 BC
+    read:
+    - 1 Kings 22:1-40
+    - 2 Chronicles 18
+  - id: 172
+    title: Jehoshaphat's reforms and victory
+    read:
+    - 2 Chronicles 19-20
+    - Psalm 83
+    - 1 Kings 22:41-50
+  - id: 173
+    title: Ahaziah of Israel
+    read:
+    - 1 Kings 22:51-53
+    - 2 Kings 1
+  - id: 174
+    title: Elijah taken up
+    read:
+    - 2 Kings 2
+  - id: 175
+    title: Jehoram of Israel and the war with Moab
+    read:
+    - 2 Kings 3
+  - id: 176
+    title: Elisha's ministry
+    read:
+    - 2 Kings 4:1-8:15
+  - id: 177
+    title: Jehoram of Judah
+    date: 848–841 BC
+    read:
+    - 2 Kings 8:16-24
+    - 2 Chronicles 21
+  - id: 178
+    title: Ahaziah of Judah
+    date: 841 BC
+    read:
+    - 2 Kings 8:25-29
+    - 2 Chronicles 22:1-6
+  - id: 179
+    title: Jehu wipes out Ahab's house
+    date: 841 BC
+    read:
+    - 2 Kings 9-10
+    - 2 Chronicles 22:7-9
+  - id: 180
+    title: Athaliah, and the hidden prince Joash
+    date: 841–835 BC
+    read:
+    - 2 Kings 11
+    - 2 Chronicles 22:10-23:21
+  - id: 181
+    title: Joash of Judah
+    date: 835–796 BC
+    read:
+    - 2 Kings 12
+    - 2 Chronicles 24
+  - id: 182
+    title: Joel
+    date: Date debated
+    read:
+    - Joel 1-3
+  - id: 183
+    title: Jehoahaz and Jehoash of Israel; Elisha's death
+    read:
+    - 2 Kings 13
+  - id: 184
+    title: Amaziah of Judah
+    date: 796–767 BC
+    read:
+    - 2 Kings 14:1-22
+    - 2 Chronicles 25
+  - id: 185
+    title: Jeroboam II of Israel
+    date: 793–753 BC
+    read:
+    - 2 Kings 14:23-29
+  - id: 186
+    title: Jonah
+    read:
+    - Jonah 1-4
+  - id: 187
+    title: Amos
+    date: About 760 BC
+    read:
+    - Amos 1-9
+  - id: 188
+    title: Hosea
+    date: About 755–715 BC
+    read:
+    - Hosea 1-14
+  - id: 189
+    title: Uzziah of Judah
+    date: 792–740 BC
+    read:
+    - 2 Kings 15:1-7
+    - 2 Chronicles 26
+  - id: 190
+    title: The last kings of Israel
+    date: 753–732 BC
+    read:
+    - 2 Kings 15:8-31
+  - id: 191
+    title: Isaiah's early messages
+    read:
+    - Isaiah 1-5
+  - id: 192
+    title: Isaiah's call
+    date: 740 BC
+    read:
+    - Isaiah 6
+  - id: 193
+    title: Jotham of Judah
+    date: 750–735 BC
+    read:
+    - 2 Kings 15:32-38
+    - 2 Chronicles 27
+  - id: 194
+    title: Ahaz, and the sign of Immanuel
+    date: 735–715 BC
+    read:
+    - 2 Kings 16
+    - 2 Chronicles 28
+    - Isaiah 7-12
+  - id: 195
+    title: Micah
+    read:
+    - Micah 1-7
+  - id: 196
+    title: Isaiah on the nations and the end
+    note: Isaiah 14:28 is dated “the year that king Ahaz died” (715 BC) and 20:1 to the Assyrian campaign
+      against Ashdod, so parts of this block run into Hezekiah’s reign.
+    read:
+    - Isaiah 13-35
+  - id: 197
+    title: The fall of Samaria
+    date: 722 BC
+    read:
+    - 2 Kings 17
+    - Psalm 80
+- part: 7
+  title: Judah Alone and the Fall of Jerusalem
+  sections:
+  - id: 198
+    title: Hezekiah's reforms
+    date: 715 BC
+    read:
+    - 2 Kings 18:1-12
+    - 2 Chronicles 29-31
+  - id: 199
+    title: Hezekiah's scribes copy Solomon's proverbs
+    read:
+    - Proverbs 25-29
+  - id: 200
+    title: Hezekiah's illness
+    date: About 703–701 BC
+    note: Hezekiah fell ill in his fourteenth year, the year of Sennacherib's invasion, and God promised
+      to deliver the city (2 Kings 20:6), so most chronologies place the illness and the Babylonian envoys
+      before the siege's end.
+    read:
+    - 2 Kings 20:1-11
+    - Isaiah 38
+    - 2 Chronicles 32:24-26
+  - id: 201
+    title: The Babylonian envoys
+    read:
+    - 2 Kings 20:12-21
+    - Isaiah 39
+    - 2 Chronicles 32:27-33
+  - id: 202
+    title: Sennacherib surrounds Jerusalem
+    date: 701 BC
+    read:
+    - 2 Kings 18:13-19:37
+    - 2 Chronicles 32:1-23
+    - Isaiah 36-37
+    - Psalm 46
+    - Psalm 48
+    - Psalm 76
+  - id: 203
+    title: Isaiah's comfort, the servant, and the new creation
+    note: Placed with Isaiah's own lifetime; these chapters speak to the later exile, and many scholars
+      date them there.
+    read:
+    - Isaiah 40-66
+  - id: 204
+    title: Manasseh and Amon
+    date: 697–640 BC
+    read:
+    - 2 Kings 21
+    - 2 Chronicles 33
+  - id: 205
+    title: 'Nahum: the fall of Nineveh foretold'
+    date: About 660–630 BC
+    read:
+    - Nahum 1-3
+  - id: 206
+    title: Josiah begins to seek God
+    date: 640–628 BC
+    read:
+    - 2 Kings 22:1-2
+    - 2 Chronicles 34:1-7
+  - id: 207
+    title: Zephaniah
+    read:
+    - Zephaniah 1-3
+  - id: 208
+    title: Jeremiah's call
+    date: 627 BC, Josiah's 13th year
+    read:
+    - Jeremiah 1
+  - id: 209
+    title: Jeremiah's early messages
+    read:
+    - Jeremiah 2-6
+  - id: 210
+    title: The Book of the Law found
+    date: 622 BC, Josiah's 18th year
+    read:
+    - 2 Kings 22:3-23:27
+    - 2 Chronicles 34:8-35:19
+  - id: 211
+    title: Josiah's death
+    date: 609 BC
+    read:
+    - 2 Kings 23:28-30
+    - 2 Chronicles 35:20-27
+  - id: 212
+    title: Jehoahaz
+    date: 609 BC
+    read:
+    - 2 Kings 23:31-35
+    - 2 Chronicles 36:1-4
+  - id: 213
+    title: Jehoiakim
+    date: 609–598 BC
+    read:
+    - 2 Kings 23:36-24:7
+    - 2 Chronicles 36:5-8
+  - id: 214
+    title: The temple sermon and Jeremiah's trial
+    date: 609 BC
+    read:
+    - Jeremiah 26
+    - Jeremiah 7-10
+  - id: 215
+    title: Jeremiah's struggles and the potter
+    read:
+    - Jeremiah 11-20
+  - id: 216
+    title: Messages to the kings; the righteous Branch
+    read:
+    - Jeremiah 22-23
+  - id: 217
+    title: Habakkuk
+    read:
+    - Habakkuk 1-3
+  - id: 218
+    title: Seventy years foretold; Carchemish
+    date: 605 BC
+    read:
+    - Jeremiah 25
+    - Jeremiah 46:1-49:33
+  - id: 219
+    title: Daniel taken to Babylon
+    date: 605 BC
+    read:
+    - Daniel 1
+  - id: 220
+    title: The king burns Jeremiah's scroll
+    date: 605–604 BC
+    read:
+    - Jeremiah 36
+    - Jeremiah 45
+  - id: 221
+    title: Nebuchadnezzar's dream
+    date: 603 BC
+    read:
+    - Daniel 2
+  - id: 222
+    title: The Rechabites
+    date: About 599 BC
+    read:
+    - Jeremiah 35
+  - id: 223
+    title: King Jehoiachin taken captive
+    date: 597 BC
+    read:
+    - 2 Kings 24:8-17
+    - 2 Chronicles 36:9-10
+  - id: 224
+    title: The good and bad figs; Elam
+    date: 597 BC
+    read:
+    - Jeremiah 24
+    - Jeremiah 49:34-39
+  - id: 225
+    title: Zedekiah's reign; the yoke of Babylon
+    date: 597–593 BC
+    read:
+    - 2 Kings 24:18-20
+    - Jeremiah 27-28
+  - id: 226
+    title: The letter to the exiles
+    read:
+    - Jeremiah 29
+  - id: 227
+    title: The doom of Babylon sent with Seraiah
+    date: 593 BC
+    read:
+    - Jeremiah 50-51
+  - id: 228
+    title: Ezekiel's call and first signs
+    date: 593 BC
+    read:
+    - Ezekiel 1-7
+  - id: 229
+    title: The glory leaves the temple
+    date: 592 BC
+    read:
+    - Ezekiel 8-19
+  - id: 230
+    title: Israel's history of rebellion
+    date: 591 BC
+    read:
+    - Ezekiel 20-23
+  - id: 231
+    title: The siege begins
+    date: 588 BC, tenth month, 10th day
+    read:
+    - Ezekiel 24
+    - Jeremiah 21
+    - Jeremiah 34:1-7
+  - id: 232
+    title: The siege lifted for a moment
+    date: 588 BC
+    read:
+    - Jeremiah 37:1-10
+    - Jeremiah 34:8-22
+  - id: 233
+    title: Jeremiah arrested
+    date: 587 BC
+    read:
+    - Jeremiah 37:11-21
+  - id: 234
+    title: The book of comfort; Jeremiah buys a field
+    date: 587 BC, Zedekiah's 10th year
+    read:
+    - Jeremiah 30-33
+  - id: 235
+    title: Jeremiah in the cistern
+    read:
+    - Jeremiah 38
+  - id: 236
+    title: Ezekiel against Egypt
+    date: 587 BC
+    read:
+    - Ezekiel 29:1-16
+    - Ezekiel 30:20-31:18
+  - id: 237
+    title: Ezekiel against Tyre
+    date: 587–586 BC
+    read:
+    - Ezekiel 26-28
+  - id: 238
+    title: Jerusalem falls
+    date: 586 BC
+    read:
+    - 2 Kings 25:1-21
+    - 2 Chronicles 36:11-21
+    - Jeremiah 39
+    - Jeremiah 52:1-30
+    - 1 Chronicles 3:10-16
+- part: 8
+  title: Exile
+  sections:
+  - id: 239
+    title: Gedaliah and the flight to Egypt
+    date: 586 BC
+    read:
+    - 2 Kings 25:22-26
+    - Jeremiah 40-44
+  - id: 240
+    title: Mourning for Jerusalem
+    read:
+    - Lamentations 1-5
+    - Psalm 74
+    - Psalm 79
+    - Psalm 137
+    - Psalm 89
+    - Psalm 102
+  - id: 241
+    title: 'Obadiah: judgment on Edom'
+    read:
+    - Obadiah 1
+  - id: 242
+    title: The news reaches Ezekiel
+    date: 585 BC
+    read:
+    - Ezekiel 33
+  - id: 243
+    title: Lament over Pharaoh
+    date: 585 BC
+    read:
+    - Ezekiel 32
+  - id: 244
+    title: Against Israel's neighbors
+    read:
+    - Ezekiel 25
+  - id: 245
+    title: The new heart and the good shepherd
+    read:
+    - Ezekiel 34-39
+  - id: 246
+    title: The fiery furnace
+    read:
+    - Daniel 3
+  - id: 247
+    title: Ezekiel's vision of the new temple
+    date: 573 BC
+    read:
+    - Ezekiel 40-48
+  - id: 248
+    title: Egypt given to Nebuchadnezzar
+    date: 571 BC
+    note: The latest dated message in Ezekiel.
+    read:
+    - Ezekiel 29:17-30:19
+  - id: 249
+    title: Nebuchadnezzar humbled
+    read:
+    - Daniel 4
+  - id: 250
+    title: Jehoiachin released
+    date: 561 BC
+    read:
+    - 2 Kings 25:27-30
+    - Jeremiah 52:31-34
+  - id: 251
+    title: Daniel's vision of the beasts and the Son of man
+    date: 553 BC, Belshazzar's 1st year
+    read:
+    - Daniel 7
+  - id: 252
+    title: The ram and the goat
+    date: 551 BC, Belshazzar's 3rd year
+    read:
+    - Daniel 8
+  - id: 253
+    title: The writing on the wall; Babylon falls
+    date: 539 BC
+    read:
+    - Daniel 5
+- part: 9
+  title: Return and Rebuilding
+  sections:
+  - id: 254
+    title: Daniel's prayer and the seventy weeks
+    date: 539 BC
+    read:
+    - Daniel 9
+  - id: 255
+    title: Daniel in the lions' den
+    read:
+    - Daniel 6
+  - id: 256
+    title: Cyrus's decree and the first return
+    date: 538 BC
+    read:
+    - 2 Chronicles 36:22-23
+    - Ezra 1-2
+  - id: 257
+    title: The altar rebuilt and the temple foundation laid
+    date: 536 BC
+    read:
+    - Ezra 3
+    - Psalm 126
+    - Psalm 85
+  - id: 258
+    title: Daniel's final vision
+    date: 536 BC, Cyrus's 3rd year
+    read:
+    - Daniel 10-12
+  - id: 259
+    title: Opposition halts the work
+    date: 536–520 BC
+    read:
+    - Ezra 4:1-5
+    - Ezra 4:24
+  - id: 260
+    title: 'Haggai: build the house'
+    date: 520 BC, sixth month
+    read:
+    - Haggai 1
+    - Ezra 5:1-2
+  - id: 261
+    title: The latter glory
+    date: 520 BC, seventh month
+    read:
+    - Haggai 2:1-9
+  - id: 262
+    title: Zechariah's call to return
+    date: 520 BC, eighth month
+    read:
+    - Zechariah 1:1-6
+  - id: 263
+    title: Blessing from this day
+    date: 520 BC, ninth month
+    read:
+    - Haggai 2:10-23
+  - id: 264
+    title: Zechariah's night visions
+    date: 519 BC, eleventh month
+    read:
+    - Zechariah 1:7-6:15
+  - id: 265
+    title: Tattenai's letter and Darius's decree
+    read:
+    - Ezra 5:3-6:12
+  - id: 266
+    title: Fasting or feasting
+    date: 518 BC
+    read:
+    - Zechariah 7-8
+  - id: 267
+    title: The temple finished
+    date: 516 BC
+    read:
+    - Ezra 6:13-22
+  - id: 268
+    title: 'Zechariah''s later visions: the coming king'
+    read:
+    - Zechariah 9-14
+  - id: 269
+    title: Esther
+    date: 483–473 BC
+    read:
+    - Ezra 4:6
+    - Esther 1-10
+  - id: 270
+    title: Ezra comes to Jerusalem
+    date: 458 BC
+    read:
+    - Ezra 7-10
+  - id: 271
+    title: Artaxerxes stops the wall
+    date: Between 458 and 445 BC
+    note: This letter explains the broken walls Nehemiah hears of in Nehemiah 1:3.
+    read:
+    - Ezra 4:7-23
+  - id: 272
+    title: Nehemiah rebuilds the walls
+    date: 445 BC
+    read:
+    - Nehemiah 1-7
+  - id: 273
+    title: The Law read and the covenant renewed
+    read:
+    - Nehemiah 8-10
+  - id: 274
+    title: Jerusalem resettled
+    read:
+    - Nehemiah 11
+    - 1 Chronicles 9:1-34
+  - id: 275
+    title: The wall dedicated
+    date: 445 BC
+    read:
+    - Nehemiah 12
+    - Psalm 107
+    - Psalm 146-150
+  - id: 276
+    title: Malachi, the last prophet
+    date: About 433 BC
+    note: Malachi confronts the same abuses Nehemiah corrects on his return, so it is read just before
+      Nehemiah 13.
+    read:
+    - Malachi 1-4
+  - id: 277
+    title: Nehemiah's return and reforms
+    date: About 430 BC
+    read:
+    - Nehemiah 13
+  - id: 278
+    title: David's line after the return
+    read:
+    - 1 Chronicles 3:17-24
+- part: 10
+  title: The Silent Years
+  note: 'About four hundred years, from Malachi to Luke. No book of this Bible describes them. They are
+    not blank, though: Daniel 8 and 11 told them in advance, the Greek kingdom, its four-way split, and
+    the sanctuary polluted (sections 252 and 258). And the feast of the dedication that Jesus attends
+    in John 10:22 (section 371) comes from these years; it is not instituted anywhere in the text. Its
+    origin is in the books of the Maccabees, outside the Protestant canon (outside the text).
+
+
+    **Outside the canon:** 1 and 2 Maccabees (in the Catholic and Orthodox Old Testaments) record these
+    years. Antiochus IV set up a pagan altar in the temple in 167 BC, the event Daniel 11:31 calls the
+    "abomination that maketh desolate." The Maccabean revolt followed, and the temple was cleansed and
+    rededicated (1 Maccabees 4:52–59), the origin of the feast in John 10:22. Hebrews 11:35 ("others were
+    tortured, not accepting deliverance; that they might obtain a better resurrection") most likely recalls
+    the mother and seven sons of 2 Maccabees 7. These books fill in the history. They add nothing to the
+    promise line.'
+  sections: []
+- part: 11
+  title: The Word Made Flesh
+  sections:
+  - id: 279
+    title: Luke's purpose
+    read:
+    - Luke 1:1-4
+  - id: 280
+    title: The Word became flesh
+    read:
+    - John 1:6-18
+  - id: 281
+    title: The family line
+    read:
+    - Matthew 1:1-17
+    - Luke 3:23-38
+  - id: 282
+    title: John's birth foretold
+    date: About 7 BC
+    read:
+    - Luke 1:5-25
+  - id: 283
+    title: Gabriel comes to Mary
+    date: About 6 BC
+    read:
+    - Luke 1:26-38
+  - id: 284
+    title: Mary visits Elizabeth
+    read:
+    - Luke 1:39-56
+  - id: 285
+    title: John is born
+    read:
+    - Luke 1:57-80
+  - id: 286
+    title: Joseph's dream
+    read:
+    - Matthew 1:18-25
+  - id: 287
+    title: Jesus is born
+    date: About 6–4 BC
+    read:
+    - Luke 2:1-7
+  - id: 288
+    title: The shepherds
+    read:
+    - Luke 2:8-20
+  - id: 289
+    title: Circumcision and presentation at the temple
+    read:
+    - Luke 2:21-38
+  - id: 290
+    title: The magi
+    read:
+    - Matthew 2:1-12
+  - id: 291
+    title: Escape to Egypt; the boys of Bethlehem
+    read:
+    - Matthew 2:13-18
+  - id: 292
+    title: Return to Nazareth
+    date: About 4 BC
+    read:
+    - Matthew 2:19-23
+    - Luke 2:39-40
+  - id: 293
+    title: The boy Jesus in the temple
+    date: About AD 8
+    read:
+    - Luke 2:41-52
+  - id: 294
+    title: John the Baptist preaches
+    date: About AD 26–28
+    read:
+    - Matthew 3:1-12
+    - Mark 1:1-8
+    - Luke 3:1-18
+  - id: 295
+    title: Jesus baptized
+    read:
+    - Matthew 3:13-17
+    - Mark 1:9-11
+    - Luke 3:21-22
+  - id: 296
+    title: Jesus tempted
+    read:
+    - Matthew 4:1-11
+    - Mark 1:12-13
+    - Luke 4:1-13
+  - id: 297
+    title: 'John''s testimony: the Lamb of God'
+    read:
+    - John 1:19-34
+  - id: 298
+    title: The first disciples
+    read:
+    - John 1:35-51
+  - id: 299
+    title: Water to wine at Cana
+    read:
+    - John 2:1-12
+  - id: 300
+    title: 'The first Passover: the temple cleansed'
+    date: About AD 27
+    read:
+    - John 2:13-25
+  - id: 301
+    title: Nicodemus
+    read:
+    - John 3:1-21
+  - id: 302
+    title: 'John the Baptist: he must increase'
+    read:
+    - John 3:22-36
+  - id: 303
+    title: John imprisoned
+    read:
+    - Luke 3:19-20
+    - Matthew 4:12
+    - Mark 1:14-15
+  - id: 304
+    title: The Samaritan woman
+    read:
+    - John 4:1-42
+  - id: 305
+    title: The official's son
+    read:
+    - John 4:43-54
+  - id: 306
+    title: Rejected at Nazareth
+    read:
+    - Luke 4:14-30
+  - id: 307
+    title: Settling in Capernaum
+    read:
+    - Matthew 4:13-17
+  - id: 308
+    title: Fishers of men
+    read:
+    - Matthew 4:18-22
+    - Mark 1:16-20
+    - Luke 5:1-11
+  - id: 309
+    title: A demon cast out in the synagogue
+    read:
+    - Mark 1:21-28
+    - Luke 4:31-37
+  - id: 310
+    title: Peter's mother-in-law and many healed
+    read:
+    - Matthew 8:14-17
+    - Mark 1:29-34
+    - Luke 4:38-41
+  - id: 311
+    title: Preaching through Galilee
+    read:
+    - Matthew 4:23-25
+    - Mark 1:35-39
+    - Luke 4:42-44
+  - id: 312
+    title: A leper cleansed
+    read:
+    - Matthew 8:1-4
+    - Mark 1:40-45
+    - Luke 5:12-16
+  - id: 313
+    title: The paralytic let down through the roof
+    read:
+    - Matthew 9:1-8
+    - Mark 2:1-12
+    - Luke 5:17-26
+  - id: 314
+    title: Matthew called
+    read:
+    - Matthew 9:9-13
+    - Mark 2:13-17
+    - Luke 5:27-32
+  - id: 315
+    title: The question about fasting
+    read:
+    - Matthew 9:14-17
+    - Mark 2:18-22
+    - Luke 5:33-39
+  - id: 316
+    title: Healing at the pool of Bethesda
+    date: A feast in Jerusalem, perhaps the Passover of AD 28
+    read:
+    - John 5
+  - id: 317
+    title: Grain on the Sabbath
+    read:
+    - Matthew 12:1-8
+    - Mark 2:23-28
+    - Luke 6:1-5
+  - id: 318
+    title: The withered hand
+    read:
+    - Matthew 12:9-14
+    - Mark 3:1-6
+    - Luke 6:6-11
+  - id: 319
+    title: Crowds by the sea
+    read:
+    - Matthew 12:15-21
+    - Mark 3:7-12
+  - id: 320
+    title: The Twelve chosen
+    read:
+    - Mark 3:13-19
+    - Luke 6:12-16
+  - id: 321
+    title: The Sermon on the Mount
+    read:
+    - Matthew 5-7
+    - Luke 6:17-49
+  - id: 322
+    title: The centurion's servant
+    read:
+    - Matthew 8:5-13
+    - Luke 7:1-10
+  - id: 323
+    title: The widow's son at Nain
+    read:
+    - Luke 7:11-17
+  - id: 324
+    title: John's question from prison
+    read:
+    - Matthew 11:2-19
+    - Luke 7:18-35
+  - id: 325
+    title: Woes on the cities; rest for the weary
+    read:
+    - Matthew 11:20-30
+  - id: 326
+    title: A sinful woman anoints his feet
+    read:
+    - Luke 7:36-50
+  - id: 327
+    title: The women who traveled with him
+    read:
+    - Luke 8:1-3
+  - id: 328
+    title: The Beelzebub accusation
+    read:
+    - Matthew 12:22-37
+    - Mark 3:20-30
+  - id: 329
+    title: The sign of Jonah
+    read:
+    - Matthew 12:38-45
+  - id: 330
+    title: His mother and brothers
+    read:
+    - Matthew 12:46-50
+    - Mark 3:31-35
+    - Luke 8:19-21
+  - id: 331
+    title: The parables of the kingdom
+    read:
+    - Matthew 13:1-53
+    - Mark 4:1-34
+    - Luke 8:4-18
+  - id: 332
+    title: The storm calmed
+    read:
+    - Matthew 8:18-27
+    - Mark 4:35-41
+    - Luke 8:22-25
+  - id: 333
+    title: The demoniac of the Gadarenes
+    read:
+    - Matthew 8:28-34
+    - Mark 5:1-20
+    - Luke 8:26-39
+  - id: 334
+    title: Jairus's daughter and the woman who touched his cloak
+    read:
+    - Matthew 9:18-26
+    - Mark 5:21-43
+    - Luke 8:40-56
+  - id: 335
+    title: Two blind men and a mute man
+    read:
+    - Matthew 9:27-34
+  - id: 336
+    title: Rejected again at Nazareth
+    read:
+    - Matthew 13:54-58
+    - Mark 6:1-6
+  - id: 337
+    title: The Twelve sent out
+    read:
+    - Matthew 9:35-11:1
+    - Mark 6:7-13
+    - Luke 9:1-6
+  - id: 338
+    title: John the Baptist beheaded
+    read:
+    - Matthew 14:1-12
+    - Mark 6:14-29
+    - Luke 9:7-9
+  - id: 339
+    title: Feeding the five thousand
+    date: About AD 29, near Passover
+    read:
+    - Matthew 14:13-21
+    - Mark 6:30-44
+    - Luke 9:10-17
+    - John 6:1-14
+  - id: 340
+    title: Walking on the water
+    read:
+    - Matthew 14:22-33
+    - Mark 6:45-52
+    - John 6:15-21
+  - id: 341
+    title: Healing at Gennesaret
+    read:
+    - Matthew 14:34-36
+    - Mark 6:53-56
+  - id: 342
+    title: The bread of life
+    read:
+    - John 6:22-71
+  - id: 343
+    title: Clean and unclean
+    read:
+    - Matthew 15:1-20
+    - Mark 7:1-23
+    - John 7:1
+  - id: 344
+    title: The Canaanite woman
+    read:
+    - Matthew 15:21-28
+    - Mark 7:24-30
+  - id: 345
+    title: Healing in the Decapolis
+    read:
+    - Matthew 15:29-31
+    - Mark 7:31-37
+  - id: 346
+    title: Feeding the four thousand
+    read:
+    - Matthew 15:32-39
+    - Mark 8:1-10
+  - id: 347
+    title: A sign demanded; the leaven of the Pharisees
+    read:
+    - Matthew 16:1-12
+    - Mark 8:11-21
+  - id: 348
+    title: A blind man at Bethsaida
+    read:
+    - Mark 8:22-26
+  - id: 349
+    title: Peter's confession
+    read:
+    - Matthew 16:13-20
+    - Mark 8:27-30
+    - Luke 9:18-21
+  - id: 350
+    title: The cross foretold
+    read:
+    - Matthew 16:21-28
+    - Mark 8:31-9:1
+    - Luke 9:22-27
+  - id: 351
+    title: The transfiguration
+    read:
+    - Matthew 17:1-13
+    - Mark 9:2-13
+    - Luke 9:28-36
+  - id: 352
+    title: The boy with an unclean spirit
+    read:
+    - Matthew 17:14-21
+    - Mark 9:14-29
+    - Luke 9:37-43
+  - id: 353
+    title: The cross foretold again
+    read:
+    - Matthew 17:22-23
+    - Mark 9:30-32
+    - Luke 9:44-45
+  - id: 354
+    title: The temple tax
+    read:
+    - Matthew 17:24-27
+  - id: 355
+    title: Who is greatest
+    read:
+    - Matthew 18:1-5
+    - Mark 9:33-37
+    - Luke 9:46-48
+  - id: 356
+    title: The man casting out demons in his name
+    read:
+    - Mark 9:38-41
+    - Luke 9:49-50
+  - id: 357
+    title: Stumbling blocks, the lost sheep, and forgiving seventy times seven
+    read:
+    - Matthew 18:6-35
+    - Mark 9:42-50
+  - id: 358
+    title: His brothers urge him to the feast
+    date: Autumn, about AD 29
+    read:
+    - John 7:2-9
+  - id: 359
+    title: Setting out for Jerusalem through Samaria
+    read:
+    - Luke 9:51-62
+  - id: 360
+    title: The Feast of Tabernacles
+    read:
+    - John 7:10-52
+  - id: 361
+    title: The woman caught in adultery
+    read:
+    - John 7:53-8:11
+  - id: 362
+    title: The light of the world
+    read:
+    - John 8:12-59
+  - id: 363
+    title: The seventy sent out
+    read:
+    - Luke 10:1-24
+  - id: 364
+    title: The good Samaritan
+    read:
+    - Luke 10:25-37
+  - id: 365
+    title: Martha and Mary
+    read:
+    - Luke 10:38-42
+  - id: 366
+    title: Teaching on prayer
+    read:
+    - Luke 11:1-13
+  - id: 367
+    title: Woes on the Pharisees and lawyers
+    read:
+    - Luke 11:14-54
+  - id: 368
+    title: Watchfulness, repentance, and the mustard seed
+    read:
+    - Luke 12:1-13:21
+  - id: 369
+    title: The man born blind
+    read:
+    - John 9
+  - id: 370
+    title: The good shepherd
+    read:
+    - John 10:1-21
+  - id: 371
+    title: The Feast of Dedication
+    date: Winter, about AD 29
+    read:
+    - John 10:22-42
+  - id: 372
+    title: The narrow door; lament over Jerusalem
+    read:
+    - Luke 13:22-35
+  - id: 373
+    title: The great supper, the lost sheep, coin, and son, and the rich man and Lazarus
+    read:
+    - Luke 14:1-17:10
+  - id: 374
+    title: Lazarus raised
+    read:
+    - John 11:1-44
+  - id: 375
+    title: The plot to kill him
+    read:
+    - John 11:45-54
+  - id: 376
+    title: Ten lepers
+    read:
+    - Luke 17:11-19
+  - id: 377
+    title: The coming of the kingdom
+    read:
+    - Luke 17:20-37
+  - id: 378
+    title: Parables on prayer
+    read:
+    - Luke 18:1-14
+  - id: 379
+    title: Marriage and divorce
+    read:
+    - Matthew 19:1-12
+    - Mark 10:1-12
+  - id: 380
+    title: Jesus blesses the children
+    read:
+    - Matthew 19:13-15
+    - Mark 10:13-16
+    - Luke 18:15-17
+  - id: 381
+    title: The rich young ruler
+    read:
+    - Matthew 19:16-30
+    - Mark 10:17-31
+    - Luke 18:18-30
+  - id: 382
+    title: The laborers in the vineyard
+    read:
+    - Matthew 20:1-16
+  - id: 383
+    title: The cross foretold a third time
+    read:
+    - Matthew 20:17-19
+    - Mark 10:32-34
+    - Luke 18:31-34
+  - id: 384
+    title: James and John ask for thrones
+    read:
+    - Matthew 20:20-28
+    - Mark 10:35-45
+  - id: 385
+    title: Bartimaeus
+    read:
+    - Matthew 20:29-34
+    - Mark 10:46-52
+    - Luke 18:35-43
+  - id: 386
+    title: Zacchaeus
+    read:
+    - Luke 19:1-10
+  - id: 387
+    title: The parable of the pounds
+    read:
+    - Luke 19:11-27
+  - id: 388
+    title: Anointed at Bethany
+    date: Six days before Passover, AD 30
+    read:
+    - John 11:55-12:11
+    - Matthew 26:6-13
+    - Mark 14:3-9
+  - id: 389
+    title: The King rides into Jerusalem
+    date: Sunday
+    read:
+    - Matthew 21:1-11
+    - Mark 11:1-11
+    - Luke 19:28-44
+    - John 12:12-19
+  - id: 390
+    title: The fig tree and the temple cleansed
+    date: Monday
+    read:
+    - Matthew 21:12-22
+    - Mark 11:12-26
+    - Luke 19:45-48
+  - id: 391
+    title: The Greeks seek Jesus; the hour has come
+    read:
+    - John 12:20-50
+  - id: 392
+    title: His authority questioned; three parables
+    date: Tuesday
+    read:
+    - Matthew 21:23-22:14
+    - Mark 11:27-12:12
+    - Luke 20:1-19
+  - id: 393
+    title: Taxes, the resurrection, the great commandment, and David's son
+    read:
+    - Matthew 22:15-46
+    - Mark 12:13-37
+    - Luke 20:20-44
+  - id: 394
+    title: Woes on the scribes and Pharisees
+    read:
+    - Matthew 23
+    - Mark 12:38-40
+    - Luke 20:45-47
+  - id: 395
+    title: The widow's mites
+    read:
+    - Mark 12:41-44
+    - Luke 21:1-4
+  - id: 396
+    title: The Olivet discourse
+    read:
+    - Matthew 24-25
+    - Mark 13
+    - Luke 21:5-38
+  - id: 397
+    title: The plot and Judas's bargain
+    date: Wednesday
+    read:
+    - Matthew 26:1-5
+    - Matthew 26:14-16
+    - Mark 14:1-2
+    - Mark 14:10-11
+    - Luke 22:1-6
+  - id: 398
+    title: Preparing the Passover
+    date: Thursday
+    read:
+    - Matthew 26:17-19
+    - Mark 14:12-16
+    - Luke 22:7-13
+  - id: 399
+    title: The Last Supper
+    date: Thursday evening
+    read:
+    - Matthew 26:20-29
+    - Mark 14:17-25
+    - Luke 22:14-30
+    - John 13:1-30
+  - id: 400
+    title: The farewell discourse
+    read:
+    - John 13:31-14:31
+    - Luke 22:31-38
+    - Matthew 26:30-35
+    - Mark 14:26-31
+  - id: 401
+    title: The vine, the Spirit, and Jesus's prayer
+    read:
+    - John 15-17
+  - id: 402
+    title: Gethsemane
+    read:
+    - Matthew 26:36-46
+    - Mark 14:32-42
+    - Luke 22:39-46
+    - John 18:1
+  - id: 403
+    title: The arrest
+    read:
+    - Matthew 26:47-56
+    - Mark 14:43-52
+    - Luke 22:47-53
+    - John 18:2-12
+  - id: 404
+    title: Before Annas and Caiaphas; Peter's denials
+    date: Thursday night
+    read:
+    - Matthew 26:57-75
+    - Mark 14:53-72
+    - Luke 22:54-71
+    - John 18:13-27
+  - id: 405
+    title: Judas's death
+    read:
+    - Matthew 27:3-10
+  - id: 406
+    title: Before Pilate and Herod
+    date: Friday morning
+    read:
+    - Matthew 27:1-2
+    - Matthew 27:11-31
+    - Mark 15:1-20
+    - Luke 23:1-25
+    - John 18:28-19:16
+  - id: 407
+    title: The crucifixion
+    date: Friday, AD 30 (or 33)
+    read:
+    - Matthew 27:32-56
+    - Mark 15:21-41
+    - Luke 23:26-49
+    - John 19:17-37
+  - id: 408
+    title: The burial
+    date: Friday evening
+    read:
+    - Matthew 27:57-66
+    - Mark 15:42-47
+    - Luke 23:50-56
+    - John 19:38-42
+  - id: 409
+    title: The empty tomb
+    date: Sunday morning
+    read:
+    - Matthew 28:1-10
+    - Mark 16:1-11
+    - Luke 24:1-12
+    - John 20:1-18
+  - id: 410
+    title: The guards' report
+    read:
+    - Matthew 28:11-15
+  - id: 411
+    title: The road to Emmaus
+    date: Sunday afternoon
+    read:
+    - Mark 16:12-13
+    - Luke 24:13-35
+  - id: 412
+    title: Jesus appears to the disciples; Thomas
+    read:
+    - Mark 16:14
+    - Luke 24:36-43
+    - John 20:19-31
+  - id: 413
+    title: By the Sea of Galilee
+    read:
+    - John 21
+  - id: 414
+    title: The great commission
+    read:
+    - Matthew 28:16-20
+    - Mark 16:15-18
+  - id: 415
+    title: The ascension
+    date: Forty days after the resurrection
+    read:
+    - Mark 16:19-20
+    - Luke 24:44-53
+    - Acts 1:1-11
+- part: 12
+  title: The Church Spreads
+  sections:
+  - id: 416
+    title: Waiting in Jerusalem; Matthias chosen
+    read:
+    - Acts 1:12-26
+  - id: 417
+    title: Pentecost
+    date: Fifty days after Passover
+    read:
+    - Acts 2
+  - id: 418
+    title: A lame man healed; Peter and John on trial
+    read:
+    - Acts 3-4
+  - id: 419
+    title: Ananias and Sapphira; the apostles jailed
+    read:
+    - Acts 5
+  - id: 420
+    title: Stephen
+    read:
+    - Acts 6-7
+  - id: 421
+    title: Philip in Samaria and the Ethiopian official
+    read:
+    - Acts 8
+  - id: 422
+    title: Saul converted
+    date: About AD 33–35
+    read:
+    - Acts 9
+  - id: 423
+    title: Peter and Cornelius
+    read:
+    - Acts 10:1-11:18
+  - id: 424
+    title: The church at Antioch; famine relief
+    read:
+    - Acts 11:19-30
+  - id: 425
+    title: James killed; Peter freed; Herod Agrippa's death
+    date: AD 44
+    read:
+    - Acts 12
+  - id: 426
+    title: The letter of James
+    date: About AD 45–49
+    read:
+    - James 1-5
+  - id: 427
+    title: Paul's first journey
+    date: About AD 46–48
+    read:
+    - Acts 13-14
+  - id: 428
+    title: The letter to the Galatians
+    date: About AD 48–49
+    read:
+    - Galatians 1-6
+  - id: 429
+    title: The Jerusalem council
+    date: About AD 49
+    read:
+    - Acts 15:1-35
+  - id: 430
+    title: 'Paul''s second journey: Philippi'
+    date: About AD 50
+    read:
+    - Acts 15:36-16:40
+  - id: 431
+    title: Thessalonica, Berea, and Athens
+    read:
+    - Acts 17
+  - id: 432
+    title: Arrival in Corinth
+    date: About AD 50–51
+    read:
+    - Acts 18:1-11
+  - id: 433
+    title: The letters to the Thessalonians
+    date: About AD 50–51
+    read:
+    - 1 Thessalonians 1-5
+    - 2 Thessalonians 1-3
+  - id: 434
+    title: Before Gallio; return to Antioch
+    date: AD 51–52
+    read:
+    - Acts 18:12-22
+  - id: 435
+    title: Apollos; Paul's third journey begins
+    read:
+    - Acts 18:23-28
+  - id: 436
+    title: Ephesus
+    date: About AD 52–55
+    read:
+    - Acts 19:1-22
+  - id: 437
+    title: The first letter to the Corinthians
+    date: About AD 54–55
+    read:
+    - 1 Corinthians 1-16
+  - id: 438
+    title: The riot at Ephesus
+    read:
+    - Acts 19:23-41
+  - id: 439
+    title: Through Macedonia
+    read:
+    - Acts 20:1-2
+  - id: 440
+    title: The second letter to the Corinthians
+    date: About AD 55–56
+    read:
+    - 2 Corinthians 1-13
+  - id: 441
+    title: Three months in Greece
+    read:
+    - Acts 20:3
+  - id: 442
+    title: The letter to the Romans
+    date: About AD 57
+    read:
+    - Romans 1-16
+  - id: 443
+    title: Farewell at Miletus; the journey to Jerusalem
+    date: AD 57
+    read:
+    - Acts 20:4-21:16
+  - id: 444
+    title: Paul arrested in the temple; trials before Felix, Festus, and Agrippa
+    date: AD 57–59
+    read:
+    - Acts 21:17-26:32
+  - id: 445
+    title: Shipwreck and arrival in Rome
+    date: AD 59–60
+    read:
+    - Acts 27:1-28:16
+  - id: 446
+    title: Two years under guard in Rome
+    date: AD 60–62
+    read:
+    - Acts 28:17-31
+  - id: 447
+    title: Letters from prison
+    date: About AD 60–62
+    read:
+    - Ephesians 1-6
+    - Colossians 1-4
+    - Philemon 1
+    - Philippians 1-4
+- part: 13
+  title: The End Returns to the Beginning
+  sections:
+  - id: 448
+    title: Paul's letters to Timothy and Titus after his release
+    date: About AD 62–64
+    read:
+    - 1 Timothy 1-6
+    - Titus 1-3
+  - id: 449
+    title: The first letter of Peter
+    date: About AD 62–64
+    read:
+    - 1 Peter 1-5
+  - id: 450
+    title: Paul's last letter
+    date: About AD 66–67
+    read:
+    - 2 Timothy 1-4
+  - id: 451
+    title: The second letter of Peter
+    date: About AD 66–68
+    read:
+    - 2 Peter 1-3
+  - id: 452
+    title: The letter to the Hebrews
+    date: Before AD 70
+    read:
+    - Hebrews 1-13
+  - id: 453
+    title: The letter of Jude
+    read:
+    - Jude 1
+  - id: 454
+    title: The temple destroyed
+    date: AD 70
+    note: No book of the Bible describes it. Jesus foretold it in Matthew 24:1–2 and Luke 21:20–24.
+    read: []
+  - id: 455
+    title: The letters of John
+    date: About AD 85–95
+    read:
+    - 1 John 1-5
+    - 2 John 1
+    - 3 John 1
+  - id: 456
+    title: Revelation
+    date: About AD 95
+    read:
+    - Revelation 1-22
