@@ -18,6 +18,7 @@
 <main><article class="report" id="report"><p class="loading">Loading the report…</p></article></main>
 <footer class="site-foot">Text of the King James Version is public domain. Notes, threads, reflections and the report are © 2026 Herein Is Love contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
 <script src="vendor/marked.umd.js"></script>
+<script src="assets/listen.js"></script>
 <script>
 (async function () {
   const el = document.getElementById('report');
@@ -37,6 +38,8 @@
     const list = document.createElement('ul'); list.className = 'toc-list';
     list.innerHTML = h2s.map(h => `<li><a href="#${h.id}">${h.textContent.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}</a></li>`).join('');
     (by && by.className === 'byline' ? by : h1).after(list);
+    Listen.setup({ collect: () => Listen.collectArticle(el) });
+    Listen.button(list, 'beforebegin');
     el.querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'table-wrap'; t.replaceWith(w); w.appendChild(t); });
     if (location.hash) { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
   } catch (e) {

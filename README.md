@@ -16,7 +16,7 @@ It's a static site with no build step and no server, so it runs on GitHub Pages 
 | `content/threads.yaml` | Study threads, each following one idea through the sections | Sometimes |
 | `content/report.md` | The report, *A Report on the Whole Bible, Read in Order* | Sometimes |
 | `content/reflections/` | Reflections: short readings, one Markdown file each, listed in `index.yaml` | Often |
-| `index.html`, `assets/` | The reader | Rarely |
+| `index.html`, `assets/` | The reader, and `assets/listen.js` for reading aloud | Rarely |
 | `report.html`, `reflections.html` | The report page and the reflections page | Rarely |
 | `vendor/` | js-yaml and marked (MIT), vendored so the site has no outside dependencies | Never |
 | `tools/check.js` | Checks the content before you publish | — |
@@ -87,6 +87,17 @@ The reflection, in plain Markdown. Writing "section 18" links it to that section
 Then add its file name to the top of `content/reflections/index.yaml`, which lists reflections newest first. `sections` and `thread` are optional. They add a "Read it in order" list at the end of the reflection.
 
 **Edit the report** in `content/report.md`. It's plain Markdown.
+
+## Listening
+
+Every section, reflection, and the report has a **Listen** button. It reads the page aloud with the reader's own device voices (the browser's speech synthesis), so it costs nothing and needs no audio files.
+
+- **Reader:** reads the section title, each chapter heading, and every verse, highlighting the verse being read. When a section ends, it continues into the next one. Study notes are not read.
+- **Reflections and the report:** reads the headings and paragraphs, skipping navigation and the "Read it in order" links.
+- **Player bar:** back, play/pause, skip, speed, and voice. Speed and voice are remembered on each device.
+- **Pronunciation fixes** for words voices get wrong (LORD, some names) live in the `SAY` list at the top of `assets/listen.js`.
+
+Voice quality depends on the device. Recent iPhones, Macs, Chrome and Edge have natural-sounding voices.
 
 ## Before you push
 
