@@ -51,15 +51,19 @@
     threadsBtn.setAttribute('aria-current', id === '#threads' ? 'true' : 'false');
   };
 
+  const hush = () => { if (window.Listen) Listen.stop(); };
+
   function renderThreads() {
+    hush();
     let out = `<div class="eyebrow">Study threads</div><h1>Threads through the timeline</h1><p class="refs">Each thread follows one idea through the sections where it appears, in timeline order. Tap a section to read it; its study notes appear above the text. These notes are commentary, not Scripture. "Stated" means the Bible itself draws the link, and "pattern" means the text sets the pieces side by side.</p>`;
     threads.forEach(th => { out += `<div class="thread" id="th-${esc(th.id)}"><h2>${esc(th.name)}</h2><p>${esc(th.intro)}</p>${goBtns(th.stops)}</div>`; });
     page.innerHTML = out; window.scrollTo(0, 0); setCurrent('#threads');
     if (location.hash !== '#threads') history.replaceState(null, '', '#threads');
   }
 
-  function renderSection(id, verseId) {
+  function renderSection(id, verseId, keepAudio) {
     const i = idx[id]; if (i == null) return renderSection(secs[0].id);
+    if (!keepAudio) hush();
     const s = secs[i], part = partOf[id];
     let out = `<div class="eyebrow">Part ${part.part} · ${esc(part.title)}</div><h1>${esc(s.id)}. ${esc(s.title)}</h1>` + (s.date ? `<div class="date">${esc(s.date)}</div>` : '');
     out += `<div class="refs">${s.read && s.read.length ? s.read.map(r => esc(dash(r))).join(' · ') : 'No new reading'}</div>`;
@@ -83,6 +87,7 @@
     </div>`;
     out += `<p class="foot">Dates are approximate and follow the Bible's own chronology where it gives one. For what the whole reading adds up to, see <a href="report.html">the report</a>. Text of the King James Version is public domain. Notes, threads, reflections and the report are © 2026 Herein Is Love contributors, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>`;
     page.innerHTML = out; setCurrent(id);
+    setupListen(s, i);
     const cur = toc.querySelector(`button.sec[data-n="${CSS.escape(id)}"]`); if (cur) cur.scrollIntoView({ block: 'nearest' });
     try { localStorage.setItem('tb-last', id); } catch (e) {}
     if (location.hash !== '#s' + id) history.replaceState(null, '', '#s' + id);
@@ -90,7 +95,35 @@
     if (el) { el.scrollIntoView({ block: 'center' }); el.classList.add('flash'); } else window.scrollTo(0, 0);
   }
 
+  // Listen: reads the section's Scripture aloud, verse by verse, then goes on to the next section.
+  function setupListen(s, i) {
+    if (!window.Listen || !Listen.supported) return;
+    Listen.setup({
+      collect: () => {
+        const items = [{ el: page.querySelector('h1'), text: 'Section ' + s.id + '. ' + s.title + '.', label: 'Section ' + s.id }];
+        page.querySelectorAll('p.chap').forEach(p => {
+          const cn = p.querySelector('.cn');
+          const [book, ch] = [cn.title.replace(/ \d+$/, ''), cn.title.match(/\d+$/)[0]];
+          items.push({ el: cn, text: book === 'Psalm' ? 'Psalm ' + ch + '.' : book + ', chapter ' + ch + '.', label: book + ' ' + ch });
+          p.querySelectorAll('.verse').forEach(v => {
+            const text = [...v.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent).join('');
+            items.push({ el: v, text, label: book + ' ' + ch + ':' + v.querySelector('sup').textContent });
+          });
+        });
+        return items;
+      },
+      onFinished: () => {
+        const next = secs[i + 1];
+        if (!next) { Listen.stop(); return; }
+        renderSection(next.id, null, true);
+        Listen.play(0);
+      },
+    });
+    Listen.button(page.querySelector('.refs'), 'afterend');
+  }
+
   function renderPart(n) {
+    hush();
     const p = parts.find(x => String(x.part) === String(n));
     page.innerHTML = `<div class="eyebrow">Part ${p.part}</div><h1>${esc(p.title)}</h1><div class="note">${md(p.note || '')}</div>`;
     window.scrollTo(0, 0); setCurrent(null);
@@ -115,6 +148,7 @@
   };
   q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(runSearch, 200); });
   function runSearch() {
+    hush();
     const term = q.value.trim().toLowerCase();
     if (term.length < 3) { if (!term) renderSection(current()); return; }
     if (!flat) buildIndex();
