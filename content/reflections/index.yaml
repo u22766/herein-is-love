@@ -1,4 +1,6 @@
 # Reflections, newest first. Each entry is a Markdown file in this folder.
 # The file starts with front matter (title, date, summary, sections) between --- lines.
 # To add a reflection: write content/reflections/<file>.md, then add its file name at the top of this list.
+- who-told-thee.md
+- what-time-is-for.md
 - loved-before-the-foundation.md
