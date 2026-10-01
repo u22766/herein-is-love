@@ -1,23 +1,9 @@
 // Text size: an "Aa" control in the menu that scales the reading text.
-// The choice is remembered on each device. On iPhone and iPad, the starting size
-// follows the system Text Size setting (Settings > Display & Brightness > Text Size).
+// Everyone starts at 100%. A chosen size is remembered on each device.
 (function () {
   const STEPS = [0.9, 1, 1.15, 1.3, 1.5, 1.75, 2];
   const root = document.documentElement;
   const clampStep = v => STEPS.reduce((a, b) => Math.abs(b - v) < Math.abs(a - v) ? b : a, 1);
-
-  function systemScale() {
-    // Safari exposes the iOS Dynamic Type size through this system font keyword.
-    try {
-      if (!(window.CSS && CSS.supports && CSS.supports('font', '-apple-system-body'))) return 1;
-      const probe = document.createElement('span');
-      probe.style.cssText = 'font:-apple-system-body;position:absolute;visibility:hidden';
-      (document.body || root).appendChild(probe);
-      const px = parseFloat(getComputedStyle(probe).fontSize) || 17;
-      probe.remove();
-      return clampStep(px / 17);   // 17px is the iOS default body size
-    } catch (e) { return 1; }
-  }
 
   let saved = null;
   try { saved = parseFloat(localStorage.getItem('text-size')); } catch (e) {}
@@ -26,7 +12,6 @@
   apply();   // runs in <head>, before the page draws, so there is no jump
 
   function build() {
-    if (!(saved > 0)) { scale = systemScale(); apply(); }
     const nav = document.querySelector('.nav');
     if (!nav || document.querySelector('.ts-wrap')) return;
     const wrap = document.createElement('div');
